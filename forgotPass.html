@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<meta name="author" content="Hege Refsnes">
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+#loginPageDiv{
+    width:700px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-200px 0 0 -350px;
+    border-style: outset;
+    border-color:black;
+    background-color: white;
+    border-width: 1x;
+}	
+body{
+background-color: silver;
+	}
+}
+.auto-style1 {
+	margin-bottom: 0px;
+}
+.auto-style2 {
+	margin-left: 0px;
+}
+
+</style>
+<script>
+function resetPass(){
+if(document.getElementById("userName").checkValidity()){
+document.getElementById("wrongUserName").innerHTML="";
+document.getElementById("resetButton").style.visibility = 'hidden';
+document.getElementById("message").innerHTML="Έχει αποσταλεί μήνυμα με τoν νέο κωδικό σας στο λογαριασμό ηλεκτρονικού ταχυδρομείου που δηλώσατε κατά την εγγραφή.";
+document.getElementById("backToLogin").innerHTML="Πατήστε εδώ για να επιστρέψετε στην οθόνη εισόδου";
+document.getElementById("backToLogin").href="login.html";
+}else{document.getElementById("wrongUserName").innerHTML="Έχετε βάλει μη έγκυρο όνομα χρήστη";}
+}
+</script>
+
+</head>
+<body>
+<div id="loginPageDiv">
+
+<img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_L.jpg?OpenImageResource"  height="79" width="126"><img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_R.jpg?OpenImageResource" height="79" width="573" >&nbsp;
+	<form>
+  <table style="width: 99%" class="auto-style1">
+	<tr>
+	<td colspan="2" class="auto-style3" style="height: 27px"><strong style="font-size:20px;">Επαναφορά του κωδικού πρόσβασης</strong></td>
+	<td class="auto-style3" style="height: 27px"></td>
+		</tr>
+		<tr>
+			<td style="width: 181px; height: 26px;">
+			<span style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">
+			Όνομα Χρήστη:</span></td>
+			<td style="height: 26px; width: 200px;">
+			<input id="userName" style="width: 325px" type="text" class="auto-style2" max="255" required></td>
+			<td style="height: 26px; width: 244px;">
+			<a id="wrongUserName" style="color:red;"></a></td>
+		</tr>
+		<tr>
+			<td style="height: 26px;" colspan="3">
+			<a id="message"></a><input style="font-size: 20px;" id="resetButton"name="Submit1" type="button" value="Aποστολή αιτήματος" onclick="resetPass()" style="width: 178px"><a id="message"></a> </td>
+		
+		</tr>
+		<tr>
+			<td style="height: 26px;" colspan="2">
+			<a id="backToLogin"></a> &nbsp;</td>
+		
+			<td style="height: 26px;">
+			&nbsp;</td>
+		
+		</tr>
+
+			</table>
+      </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<meta name="author" content="Hege Refsnes">
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+
+
+td{
+font-size: 20px;
+
+
+}
+
+#loginPageDiv{
+    width:780px;
+    height:350px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-200px 0 0 -350px;
+    border-style: outset;
+    border-color:black;
+    background-color: white;
+    border-width: 1x;
+}	
+body{
+background-color: silver;
+	}
+}
+.auto-style1 {
+	margin-bottom: 0px;
+}
+</style>
+<script>
+function loginCheck(){
+if(document.getElementById("userName").checkValidity()&document.getElementById("pass").checkValidity()){
+var k=document.getElementById("kind").selectedIndex;
+
+if(k==1){
+document.getElementById("message").innerHTML="company";
+//location.replace("company.html");
+}else if(k==2){
+document.getElementById("message").innerHTML="leitourgos";
+//location.replace("leitourgos.html");
+}
+
+else {document.getElementById("message").innerHTML="Πρέπει να επιλέξετε την ιδιότητα σας.";
+}
+
+}else{document.getElementById("message").innerHTML="Είτε ο κωδικός σας είτε το όνομα χρήστη είναι λανθασμένο";}
+}
+</script>
+
+</head>
+<body>
+<div id="loginPageDiv">
+
+<img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_L.jpg?OpenImageResource"  height="97" width="151"><img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_R.jpg?OpenImageResource" height="97" width="628" >&nbsp;
+	<form action="">
+	<table style="width: 93%" class="auto-style1">
+	<tr>
+		<td style="width: 248px; height: 26px;"></td>
+			<td style="width: 149px; height: 26px;">
+			Έισοδος ως:</td>
+			<td style="height: 26px; width: 244px;">
+			<select id ="kind" name="kind" style="font-size: 18px;width: 241px">
+			<option value="none" selected>Παρακαλώ Επιλέξετε</option>
+			<option value="company">Eταιρεία</option>
+			<option value="leitourgos">Λειτουργός</option>
+			</select></td>
+		</tr>
+  
+  
+  
+  <tr>
+	<td style="width: 248px; height: 26px;"></td>
+			<td style="width: 149px; height: 26px;">
+					Όνομα Χρήστη:</td>
+			<td style="height: 26px; width: 244px;"><input  pattern=".{8,20}" id="userName" name="Text1" style="font-size: 18px;width: 242px" type="text" required></td>
+		</tr>
+		<tr>
+		<td style="width: 248px"><a href="register.html">Εγγραφή εταιρείας στο σύστημα</a></td>
+			<td style="width: 149px; height: 26px;">
+		
+			Κωδικός:</td>
+			<td style="height: 26px; width: 244px;"><input id="pass" type="password"pattern=".{8,20}" style="font-size: 18px;width: 241px" required></td>
+		</tr>
+		
+		<tr>
+		<td style="width: 248px; height: 23px;"></td>
+			<td style="width: 149px; height: 23px;">
+		
+			<td style="height: 23px; width: 244px;">
+			 <a  href="forgotPass.html"> Ξεχάσατε τον κωδικό σας;</a>
+			
+		</tr>
+    				
+		<tr>
+		<td style="height: 23px;" colspan="3"><a id="message"style="color:red;"></a></td>
+			<tr>
+		<td style="width: 248px; height: 23px;"></td>
+			<td style="width: 149px; height: 23px;">
+			</td>
+			<td style="height: 23px; width: 244px;">
+			<input onclick="loginCheck();" style="font-size: 25px;" name="Submit1" type="button" value="Σύνδεση"></td>
+			
+		</tr>
+	</table>
+	</form>
+</div>
+</body>
+</html>
