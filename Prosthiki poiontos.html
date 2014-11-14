@@ -3,11 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Προσθήκη Προιόντος</title>
+<link href="css" rel="stylesheet" type="text/css" />
 <link href="tabMenu.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.1.js"></script>
 </head>
 
 <body>
+<<<<<<< HEAD
+
+<p><img src="banner_gr_L.jpg" width="120" height="110" /><img src="banner_gr_R.jpg" width="647" height="110" /></p>
+=======
 <p><img src="../../../Desktop/bootstrap-3.3.0-dist/dist/banner_gr_Laa.png" width="1060" height="98" /></p>
+
 <p>
 <br>
 <table>
@@ -20,8 +27,6 @@
 <li><a href="Stoixeia xristi.html"id="User">Στοιχεία Χρήστη</a></li>
 <li><a href="Prosthiki poiontos.html">Προσθήκη Προιόντος</a></li>
 <li><a href="Anazitisi_tropopoiisi.html"id="Search">Αναζήτηση-Τροποποίηση Προιόντος</a></li>
-<li></li>
-<li></li>
 </ul>
 </div>
 </div>
@@ -113,7 +118,7 @@
 <b><font size="4">Χημική Σύνθεση</font></b>
 <br>
 <br>
-<table width="885" border="1" cellpadding="1" cellspacing="0">
+<table id ="chemical" width="885" border="1" cellpadding="1" cellspacing="0">
   <tr>
     <th width="73" scope="col">A/A</th>
     <th width="123" scope="col">Χημική ουσία</th>
@@ -124,32 +129,11 @@
     <th width="69" scope="col">Βάρος</th>
     <th width="64" scope="col">Στοιχεία Ταξινόμησης</th>
     <th width="132" scope="col">Εναρμονική Ταξινόμηση</th>
-  </tr>
-  <tr>
-    <td><input style="border:none " ></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input />      </input></td>
-    <td><input type="checkbox" ></td>
-  </tr>
-  <tr>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input style="border:none "></input></td>
-    <td><input type="checkbox" ></td>
-  </tr>
+   <th width="132" scope="col">Διαγραφή</th> 
+  </tr> 
 </table>
 <br>
-<input type="submit" name="add_element" value="Εισαγωγή στοιχείου" id="add_element" />
+<input type="submit" onclick="addElement();" name="add_element" value="Εισαγωγή στοιχείου" id="add_element" />
 <br>
 <br>
  <form>
@@ -166,5 +150,39 @@
        </form>
 <br>
 <input type="submit" name="submit" value="Καταχώρηση" id="submit" />
+<!--scripts-->
+<script type="application/javascript">		
+var intTextBox=1;
+var choiceCount=1;
+
+//FUNCTION TO ADD TEXT BOX ELEMENT
+function addElement()
+{
+	if (choiceCount < 100 && intTextBox < 200) {
+		intTextBox = intTextBox + 1;
+		choiceCount = choiceCount+1;
+		var contentID = document.getElementById('chemical');
+		var newTBDiv = document.createElement('tr');
+		newTBDiv.setAttribute('id','chemicaltexts'+intTextBox);
+		newTBDiv.innerHTML ="<td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input type='checkbox'/></td><td><input name='remove' type='button' value='X' onclick='removeElementID("+intTextBox+");' /></td>"; 
+		contentID.appendChild(newTBDiv);
+	} else {
+		alert("Φτάσατε το μέγιστο όριο χημικών ουσιών που μπορείτε να προσθέσετε");
+	}
+}
+
+
+//FUNCTION TO REMOVE TEXT BOX ELEMENT
+
+function removeElementID(cnum)
+{
+	var contentID = document.getElementById('chemical');
+	contentID.removeChild(document.getElementById('chemicaltexts'+cnum));
+	//intTextBox = intTextBox-1; this would break it
+	choiceCount = choiceCount-1;
+}
+window.onload= addElement();
+window.onload= addElement();
+</script>
 </body>
 </html>
