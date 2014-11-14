@@ -8,19 +8,28 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
+    <img width="120" height="110" src="banner_gr_L.jpg">
+    <img width="647" height="110" src="banner_gr_R.jpg">
+    <form class="bs-example bs-example-form" role="form">
+      <div class="row">
+	<div class="col-lg-6">
+	  <div class="input-group">
+	    <input type="text" class="form-control" placeholder="Αναζήτηση...">
+	    <div class="input-group-btn">
+	      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Search By 
+		<span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+		<li><a href="#">Όνομα Χημικής Ουσίας</a></li>  
+		<li><a href="#">Όνομα Προϊόντος</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </form>
     <section>
-
-      <!--div data-role="main" class="ui-content"-->
-      <form class="navbar-form">
-	<input class="form-control" type="text" placeholder="Αναζήτηση...">
-	by 
-	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
-	  <li class="active" role="menuitem"><a href="#"> Όνομα Χημικής Ουσίας</a></li>
-	  
-	  <li class="active" role="menuitem"><a href="#">Όνομα Προϊόντος</a></li>
-	</ul>
-      </form>
-  
+      
       <table class="table table-striped">
 	<thead>
 	  <tr>
