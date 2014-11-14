@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
-<meta name="description" content="Free Web tutorials on HTML and CSS">
-<meta name="author" content="Hege Refsnes">
-<meta charset="UTF-8">
-<style type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
 
-#loginPageDiv{
-    width:700px;
-    height:950px;
-    position:absolute;
-    left:50%;
-    top:38%;
-    margin:-200px 0 0 -350px;
-    border-style: outset;
-    border-color:black;
-    background-color: white;
-    border-width: 1x;
-}	
-body{
-background-color: silver;
-	}
-}
-
-
-.auto-style1 {
-	text-align: center;
-}
-
-
-</style>
 
 <script>
 function passCheck(){
@@ -62,32 +35,32 @@ document.getElementById("goLogin").href="login.html"
 </script>
 
 </head>
+
 <body>
 
-<div id="loginPageDiv">
-
-<img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_L.jpg?OpenImageResource"  height="79" width="126"><img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_R.jpg?OpenImageResource" height="79" width="573" >&nbsp;
-<div>
-
-<strong style="font-size:20px;">Στοιχεία Επιχείρησης</strong>
-<form id="regForm">
-
+	<div>
+    <img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_L.jpg?OpenImageResource"  height="79" width="126"><img src="http://www.mlsi.gov.cy/mlsi/dli/dli.nsf/banner_gr_R.jpg?OpenImageResource" height="79" width="573" >
+    </div>
+    
+    <strong style="font-size:20px;">Στοιχεία Επιχείρησης</strong>
+    <form id="regForm">
 
 
 
 
 
-	<table style="width: 100%">
+
+	<table width="41%" height="521" style="width: 100%">
 	<tr>
 			<td style="height: 23px;color:red" colspan="3"><a>Τα υποχρεωτικά πεδία έχουν κόκκινο αστεράκι στο τέλος</a></td>
 		</tr>
 
 		<tr>  
-			<td style="width: 169px; height: 21px" >
+			<td width="197" style="width: 169px; height: 21px" >
 			Επωνυμία Επιχείρησης:</td>
-			<td style="height: 21px; width: 275px;">
+			<td width="277" style="height: 21px; width: 275px;">
 			<input id ="CompName" onblur="inputCheck('CompName','wrongCompName');" pattern=".{3,50}"style="width: 272px" type="text" required> </td>
-			<td style="height: 21px">
+			<td width="1144" style="height: 21px">
 			<a id="wrongCompName" style="color:red;">*</a>
 	
 
@@ -155,21 +128,29 @@ document.getElementById("goLogin").href="login.html"
 			Άλλες Πληροφορίες:</td>
 			<td style="width: 275px" >
 			<textarea pattern=".{0,200}" name="description" rows="5" style="margin: 0px; width: 271px; height: 77px;" cols="20"></textarea></td>
-			<td >
-			&nbsp;</td>
+			<td >&nbsp;
+			</td>
 		</tr>
+    	
     	<tr>
-			<td style="height: 23px;color:red" colspan="3">Το όνομα χρήστη πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες και να περιλαμβάνει αριθμούς, καθώς και κεφαλαία και μικρά γράμματα. Πρέπει να ξεκινά πάντοτε από γράμμα.</td>
-		</tr>
+    	  <td colspan="3" style="height: 23px;color:red">Το όνομα χρήστη πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες και να περιλαμβάνει αριθμούς,</td>
+  	  </tr>
+    	<tr>
+    	  <td colspan="3" style="height: 23px;color:red">καθώς και κεφαλαία και μικρά γράμματα. Πρέπει να ξεκινά πάντοτε από γράμμα.</td>
+  	  </tr>
 		<tr>
 			<td style="width: 169px; height: 23px;">Όνομα Χρήστη:</td>
 			<td style="width: 275px; height: 23px;" >
 			<input onblur="inputCheck('userName','wronguserName');" id ="userName"pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{7,20}$" style="width: 271px" type="text"required></td>
 			<td style="height: 23px" ><a id="wronguserName" style="color:red;">*</a></td>
 		</tr>
+		
 		<tr>
-			<td style="height: 23px;color:red" colspan="3">Ο κωδικός πρέπει να αποτελείται από 8 ή περισσότερους χαρακτήρες και να περιλαμβάνει αριθμούς, καθώς και κεφαλαία και μικρά γράμματα.</td>
-		</tr>
+		  <td style="height: 23px;color:red" colspan="3">Ο κωδικός πρέπει να αποτελείται από 8 ή περισσότερους χαρακτήρες και να περιλαμβάνει αριθμούς, </td>
+	  </tr>
+		<tr>
+		  <td style="height: 23px;color:red" colspan="3">καθώς και κεφαλαία και μικρά γράμματα.</td>
+	  </tr>
 		<tr>
 			<td style="width: 169px">Κωδικός:</td>
 			<td style="width: 275px" >
@@ -189,11 +170,11 @@ document.getElementById("goLogin").href="login.html"
 			<table style="width: 100%">
 
 		<tr>
-			<td style="width: 160px" >
+			<td width="167" style="width: 160px" >
 			Όνομα:</td>
-			<td style="width: 269px" >
+			<td width="327" style="width: 269px" >
 			<input onblur="inputCheck('comName','wrongcomName');" id ="comName"pattern=".{5,50}" style="width: 271px" type="text"required></td>
-			<td >
+			<td width="1124" >
 			<a id="wrongcomName" style="color:red;">*</a></td>
 		</tr>
 		<tr>
@@ -268,8 +249,8 @@ document.getElementById("goLogin").href="login.html"
 		
 		<tr>
 			<td style="width: 160px;"></td>
-			<td style="width: 269px;">
-			&nbsp;</td>
+			<td style="width: 269px;">&nbsp;
+			</td>
 			<td>&nbsp;</td>
 		</tr>
 	</table>
@@ -282,10 +263,6 @@ document.getElementById("goLogin").href="login.html"
 </form>
 
 
-</div>
-	
-	
-	
-	</div>
+
 </body>
 </html>
