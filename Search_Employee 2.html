@@ -23,18 +23,27 @@ font-family:"Calibri","sans-serif";
 </style>
 </head>
 
-<body>
 <p><img src="banner_gr_Laa.png" width="1060" height="98" /></p>
-<p>
+
+<div>
+<table>
+<tr><td><font size="3">User name</font></td>
+<td  width = "650px"></td>
+<td> <a href="login.html">Log out</a></td>
+</tr></table>
+</div>
+<br>
+
+
+
+
 <h3>Αναζήτηση</h3> 
-<input type="text" name="input for search" title="ififf"></input>
+<input type="text" name="textField" id="text"></input>
 <script type="text/javascript">
-    function table_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+    function table_visibility(id,text) {
+         var e = document.getElementById(id);
+         e.style.display = 'block';
+		 document.getElementById('text').value='';
     }
 </script>
 
@@ -45,7 +54,7 @@ font-family:"Calibri","sans-serif";
     <option value="text"> Χειμική Ουσία </option>
     <option value="text"> Παρασκευαστική Εταιρία</option>
   </select>
-  <button type="button" name="b1" onclick="table_visibility('table');" id="button">Αναζήτηση</button> 
+  <button  name="b1" onclick="table_visibility('table','text');" id="button" type="search">Αναζήτηση</button> 
 </div>
 <br>
 <div id='table' style="display:none" >
