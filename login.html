@@ -8,22 +8,26 @@
 
 <script>
 function loginCheck(){
-if(document.getElementById("userName").checkValidity()&document.getElementById("pass").checkValidity()){
+//if(document.getElementById("userName").checkValidity()&document.getElementById("pass").checkValidity()){
 var k=document.getElementById("kind").selectedIndex;
 
 if(k==1){
-document.getElementById("message").innerHTML="company";
-//location.replace("company.html");
+//document.getElementById("message").innerHTML="company";
+window.location = "Stoixeia xristi.html"
 }else if(k==2){
 document.getElementById("message").innerHTML="leitourgos";
 //location.replace("leitourgos.html");
+//pofile litourgou
 }
 
 else {document.getElementById("message").innerHTML="Πρέπει να επιλέξετε την ιδιότητα σας.";
 }
 
-}else{document.getElementById("message").innerHTML="Είτε ο κωδικός σας είτε το όνομα χρήστη είναι λανθασμένο";}
+//}else{
+	//document.getElementById("message").innerHTML="Είτε ο κωδικός σας είτε το όνομα χρήστη είναι λανθασμένο"//;}
 }
+
+
 </script>
 
 </head>
@@ -42,7 +46,7 @@ else {document.getElementById("message").innerHTML="Πρέπει να επιλέ
     <th width="117" align="left" scope="col">Έισοδος ως:</th>
     <th width="242" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px">
 			<option value="none" selected>Παρακαλώ Επιλέξετε</option>
-			<option value="company">Eταιρεία</option>
+			<option value="promiteftis">Προμηθευτής</option>
 			<option value="leitourgos">Λειτουργός</option>
 			</select>
             </th>
