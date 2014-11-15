@@ -16,6 +16,7 @@ document.getElementById("message").innerHTML="Πρέπει να επιλέξετ
 }
 else if(k==1){
 //document.getElementById("message").innerHTML="company";
+
 window.location = "Stoixeia xristi.html";
 }else if(k==2){
 //document.getElementById("message").innerHTML="leitourgos";
@@ -31,6 +32,15 @@ window.location="Search_Employee 2.html";
 	//document.getElementById("message").innerHTML="Είτε ο κωδικός σας είτε το όνομα χρήστη είναι λανθασμένο"//;}
 }
 
+function changeValue(){
+	var k=document.getElementById("kind").selectedIndex;
+	if(k!=0){
+		document.getElementById("message").style.display="none";
+	}
+	else{
+		document.getElementById("message").style.display="block";
+	}
+}
 
 </script>
 
@@ -53,8 +63,8 @@ window.location="Search_Employee 2.html";
   <tr>
     <th width="246" scope="col">&nbsp;</th>
     <th width="117" align="left" scope="col">Έισοδος ως:</th>
-    <th width="242" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px">
-			<option value="none" selected>Παρακαλώ Επιλέξετε</option>
+    <th width="242" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px" onchange="changeValue()">
+			<option value="none" selected >Παρακαλώ Επιλέξετε</option>
 			<option value="promiteftis">Προμηθευτής</option>
 			<option value="leitourgos">Λειτουργός</option>
 			</select>
