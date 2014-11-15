@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script>
+function loginCheck(){
+//if(document.getElementById("userName").checkValidity()&document.getElementById("pass").checkValidity()){
+var k=document.getElementById("kind").selectedIndex;
+
+if(k==0){
+document.getElementById("message").innerHTML="Πρέπει να επιλέξετε την ιδιότητα σας.";
+}
+else if(k==1){
+//document.getElementById("message").innerHTML="company";
+
+window.location = "Profile Promithefti/Stoixeia xristi.html";
+}else if(k==2){
+//document.getElementById("message").innerHTML="leitourgos";
+//location.replace("leitourgos.html");
+window.location="Profile Litourgou/Search_Employee 2.html";
+}
+
+
+//else {document.getElementById("message").innerHTML="Πρέπει να επιλέξετε την ιδιότητα σας.";
+//}
+
+//}else{
+	//document.getElementById("message").innerHTML="Είτε ο κωδικός σας είτε το όνομα χρήστη είναι λανθασμένο"//;}
+}
+
+function changeValue(){
+	var k=document.getElementById("kind").selectedIndex;
+	if(k!=0){
+		document.getElementById("message").style.display="none";
+	}
+	else{
+		document.getElementById("message").style.display="block";
+	}
+}
+
+</script>
+
+<style type="text/css">
+#message {
+	color: #F00;
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+<div><img src="images/banner_gr_Laa.png" width="1060" height="98" />
+    </div>
+<div>
+  <table align="left" >
+  <tr>
+    <th width="246" scope="col">&nbsp;</th>
+    <th width="117" align="left" scope="col">Έισοδος ως:</th>
+    <th width="242" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px" onchange="changeValue()">
+			<option value="none" selected >Παρακαλώ Επιλέξετε</option>
+			<option value="promiteftis">Προμηθευτής</option>
+			<option value="leitourgos">Λειτουργός</option>
+			</select>
+            </th>
+            <th width="403"><p id="message"></p></th>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td>Όνομα Χρήστη:</td>
+    <td><input  pattern=".{8,20}" id="userName" name="Text1" style="font-size: 18px;width: 242px" type="text" required></td>
+  </tr>
+  <tr>
+    <th scope="row"><a href="Profile Promithefti/register.html">Εγγραφή εταιρείας στο σύστημα</a></th>
+    <td>Κωδικός:</td>
+    <td><input id="pass" type="password"pattern=".{8,20}" style="font-size: 18px;width: 241px" required></td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td>&nbsp;</td>
+    <td> <a  href="forgotPass.html"> Ξεχάσατε τον κωδικό σας;</a></td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td>&nbsp;</td>
+    <td>	<input onclick="loginCheck();" style="font-size: 25px;" name="Submit1" type="button" value="Σύνδεση"></td>
+ 
+</table>
+
+    
+    
+</div>
+ 
+</body>
+</html>

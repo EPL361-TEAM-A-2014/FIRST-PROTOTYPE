@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Προσθήκη Προιόντος</title>
+<link href="css/customcss.css" rel="stylesheet" type="text/css" />
+<link href="../css/tabMenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/upclick-min.js"></script>
+<script src="../js/jquery-1.11.1.js"></script>
+<script src="../js/jquery.ocupload-1.1.2.js"></script>
+</head>
+
+<body>
+
+<p><img src="../images/banner_gr_Laa.png" width="1060" height="98" /></p>
+
+<p>
+<br>
+<table>
+<tr><td><font size="3">User name</font></td><td></td><td></td><td></td><td  width = "700px"></td><td><font size="3" color="#0000FF"><u><a href="../login.html">Log out</a></u></font></td></tr>
+</table>
+<br>
+<div id="navbar">
+<div id="holder">
+<ul>
+<li><a href="Stoixeia xristi.html"id="User">Στοιχεία Χρήστη</a></li>
+<li><a href="Prosthiki poiontos.html">Προσθήκη Προιόντος</a></li>
+<li><a href="Anazitisi_tropopoiisi.html"id="Search">Αναζήτηση-Τροποποίηση Προιόντος</a></li>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+<h3> Κατασκευαστική εταιρεία</h3>
+<form action="">
+  <select name="Companies">
+  <option value="Νεα_εταιρεία" selected="selected">Νεα εταιρεία</option>
+  </select>
+</form>
+<br>
+<input type="checkbox" id ="checkbox" onclick="displaySupDetails();">Παρασκευαστής(Ναι/Όχι)</input>
+<div id="supdetails">
+<h4> Στοιχεία Παρασκευαστή </h4>
+<table width="auto">
+    <form name="UserDetails" id="UserDetails">
+           
+        <tr><td>Ονομα</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+       <tr><td>Διευθυνση</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Πολη</td><td></td><td><input name="onoma2" id="onoma2" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Ταχυδρομικος κώδικας</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Email</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+  </form>
+</table> 
+<br>
+<!------------------------------------------------------------------->
+<h4>Στοιχεία Παρασκευαστικής Εταιρίας</h4>
+<table width="auto">
+    <form name="UserDetails" id="UserDetails">
+           
+        <tr><td>Επωνυμία Επιχείρσης</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+       <tr><td>Εμπορική Επωνυμία Επιχείρησης</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Άλλη Επωνυμία ,Νομική Μορφή</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Όνομα Διευθυντή</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Διεύθυνση Αλληλογραφίας</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr><td>Πόλη/Δήμος/Κοινότητα</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+       <tr><td>Χώρα,Τηλέφωνο</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+  </form>
+</table> 
+</div>
+<!------------------------------------------------------------------->
+<br>
+<font size="4"><b>Στοιχεία Προιόντος</b></font>
+<br>
+<br>
+<table width="auto">
+    <form name="UserDetails" id="UserDetails">
+           
+        <tr><td>Χημική Ονομασία</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+       <tr><td>Εμπορική Ονομασία</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Προβλεπόμενες Χρήσεις</td><td></td><td><textarea name="textarea" cols="50" rows="5"></textarea></td></tr>
+      <tr height= "20px"></tr>
+      <tr><td>Κατάσταση</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+      <tr height= "20px"></tr>
+      <tr>
+        <td>Διεύθυνση Αποθήκευσης Μείγματος</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+       <tr height= "20px"></tr>
+      <tr>
+        <td>Στοιχεία Ταξινόμησης</td><td></td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td></tr>
+  </form>
+</table> 
+<br>
+<br>
+<b><font size="4">Χημική Σύνθεση</font></b>
+<br>
+<br>
+<table id ="chemical" width="885" border="1" cellpadding="1" cellspacing="0">
+  <tr>
+    <th width="73" scope="col">A/A</th>
+    <th width="123" scope="col">Χημική ουσία</th>
+    <th width="86" scope="col">CAS</th>
+    <th width="130" scope="col">EC/EINECS</th>
+    <th width="73" scope="col">IUPAC</th>
+    <th width="77" scope="col">Ονομασία</th>
+    <th width="69" scope="col">Βάρος</th>
+    <th width="64" scope="col">Στοιχεία Ταξινόμησης</th>
+    <th width="132" scope="col">Εναρμονική Ταξινόμηση</th>
+   <th width="132" scope="col">Διαγραφή</th> 
+  </tr> 
+</table>
+<br>
+<input type="submit" onclick="addElement();" name="add_element" value="Εισαγωγή στοιχείου" id="add_element" />
+<br>
+<br>
+ <form>
+<table width="auto">
+    <form name="UserDetails" id="UserDetails">
+        <input name="Filedata" type="file" size="1" style="position: absolute; display: block; top: 0px; left: 0px; height: 80px; width: 80px; opacity: 0; font-size: 8px; z-index: 1; margin-left: -40px;">   
+        <tr>
+          <td>Προσθήκη ΔΔΑ</td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td><td><input type="submit" name="Browse_1" value="Browse" id="Browse_1" /></td></tr>
+      <tr height= "20px"></tr>
+       <tr><td>Προσθήκη Ετικέτας</td><td>
+      <input name="onoma" id="onoma" type="text" style="background-color:#FFFFFF; font-family:verdana,arial; font-size:9px; padding:1px; width:200px; height:20px" /></td><td><input type="submit" name="Browse_2" value="Browse" id="Browse_2" /></td></tr>
+       </table>
+       </form>
+<br>
+<input type="submit" name="submit" value="Καταχώρηση" id="submit" />
+<!--scripts-->
+<script >		
+var intTextBox=0;
+var choiceCount=0;
+
+//FUNCTION TO ADD TEXT BOX ELEMENT
+function addElement()
+{
+	if (choiceCount < 100 && intTextBox < 200) {
+		intTextBox = intTextBox + 1;
+		choiceCount = choiceCount+1;
+		var contentID = document.getElementById('chemical');
+		var newTBDiv = document.createElement('tr');
+		newTBDiv.setAttribute('id','chemicaltexts'+intTextBox);
+		newTBDiv.innerHTML ="<td><input disabled  style='border:none;text-align:right;font-weight: bold;' value='"+choiceCount+"'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input style='border:none'/></td><td><input type='checkbox'/></td><td><input name='remove' type='button' value='X' onclick='removeElementID("+intTextBox+");' /></td>"; 
+		contentID.appendChild(newTBDiv);
+	} else {
+		alert("Φτάσατε το μέγιστο όριο χημικών ουσιών που μπορείτε να προσθέσετε");
+	}
+}
+
+
+//FUNCTION TO REMOVE TEXT BOX ELEMENT
+
+function removeElementID(cnum)
+{
+	var contentID = document.getElementById('chemical');
+	contentID.removeChild(document.getElementById('chemicaltexts'+cnum));
+	//intTextBox = intTextBox-1; this would break it
+	choiceCount = choiceCount-1;
+}
+window.onload= addElement();
+window.onload= addElement();
+
+<!--submit window--> 
+$("#Browse_1").upload({
+        name: 'file',
+        action: '',
+        enctype: '',
+        params: {},
+        autoSubmit: true,
+        onSubmit: function() {},
+        onComplete: function() {},
+        onSelect: function() {}
+});
+$("#Browse_2").upload({
+        name: 'file',
+        action: '',
+        enctype: '',
+        params: {},
+        autoSubmit: true,
+        onSubmit: function() {},
+        onComplete: function() {},
+        onSelect: function() {}
+});
+<!--showsupdetails -->
+
+function displaySupDetails() {
+	//document.getElementById("checkbox").checked=true;
+	if(!document.getElementById("checkbox").checked)
+    	document.getElementById("supdetails").style.display = "block";
+	else
+		document.getElementById("supdetails").style.display = "none";
+}
+</script>
+
+</body>
+</html>

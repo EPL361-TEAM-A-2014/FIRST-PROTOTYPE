@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script>
+function resetPass(){
+/*if(document.getElementById("userName").checkValidity()){
+document.getElementById("wrongUserName").innerHTML="";
+document.getElementById("resetButton").style.visibility = 'hidden';
+document.getElementById("message").innerHTML="Έχει αποσταλεί μήνυμα με τoν νέο κωδικό σας στο λογαριασμό ηλεκτρονικού ταχυδρομείου που δηλώσατε κατά την εγγραφή.";
+document.getElementById("backToLogin").innerHTML="Πατήστε εδώ για να επιστρέψετε στην οθόνη εισόδου";
+document.getElementById("backToLogin").href="login.html";
+}else{document.getElementById("wrongUserName").innerHTML="Έχετε βάλει μη έγκυρο όνομα χρήστη";}*/
+
+window.location="login.html";
+}
+
+</script>
+</head>
+
+<body>
+
+
+    <div>
+    <img src="images/banner_gr_Laa.png" width="1060" height="98" /> </div>
+    
+    <div>
+   	  <table >
+  <tr>
+    <th height="41" colspan="2" scope="col">Επαναφορά του κωδικού πρόσβασης</th>
+    </tr>
+  <tr>
+    <th width="205" scope="row">Όνομα Χρήστη:</th>
+    <td width="478"><input id="userName" style="width: 325px" type="text" class="auto-style2" max="255" required></td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td></a><input style="font-size: 20px;" id="resetButton"name="Submit1" type="button" value="Aποστολή αιτήματος" onclick="resetPass()" style="width: 178px"><a id="message"></a></td>
+  </tr>
+</table>
+
+</div>
+    
+    
+</body>
+</html>
