@@ -46,7 +46,10 @@ textarea{
  resize:vertical;max-height:150px; min-height:100px;
 	}
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-
+#login{
+	margin:auto;
+	width:900px;
+}
 @media only screen and (min-width: 481px) {
 .gridContainer {
 	width: 90.675%;

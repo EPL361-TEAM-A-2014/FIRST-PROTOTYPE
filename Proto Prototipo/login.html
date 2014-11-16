@@ -5,7 +5,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-
+<link rel="stylesheet" type="text/css" href="css/customcss.css">
 <script>
 function loginCheck(){
 //if(document.getElementById("userName").checkValidity()&document.getElementById("pass").checkValidity()){
@@ -55,21 +55,22 @@ function changeValue(){
 
 
 
+<div class="setscreen">
 
-<div><img src="images/banner_gr_Laa.png" width="1060" height="98" />
-    </div>
-<div>
-  <table align="left" >
+   
+  <table class="login" align="left" width="887" >
+  <tr><th colspan="4"><img src="images/banner_gr_Laa.png" width="911" height="98" /></th></tr>
   <tr>
-    <th width="246" scope="col">&nbsp;</th>
-    <th width="117" align="left" scope="col">Έισοδος ως:</th>
-    <th width="242" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px" onchange="changeValue()">
+    <th width="100" height="61" scope="col">&nbsp;</th>
+    <th width="153" align="left" scope="col">Έισοδος ως:</th>
+    <th width="252" scope="col"><select id ="kind" name="kind" style="font-size: 18px;width: 241px" onchange="changeValue()">
 			<option value="none" selected >Παρακαλώ Επιλέξετε</option>
 			<option value="promiteftis">Προμηθευτής</option>
 			<option value="leitourgos">Λειτουργός</option>
 			</select>
-            </th>
-            <th width="403"><p id="message"></p></th>
+      </th>
+            <th width="394"><p>Δέν έχετε λογαριασμό;</p></th>
+        <p>&nbsp;</p>              <p id="message"></p><td width="10"></th>
   </tr>
   <tr>
     <th scope="row">&nbsp;</th>
@@ -77,9 +78,12 @@ function changeValue(){
     <td><input  pattern=".{8,20}" id="userName" name="Text1" style="font-size: 18px;width: 242px" type="text" required></td>
   </tr>
   <tr>
-    <th scope="row"><a href="Profile Promithefti/register.html">Εγγραφή εταιρείας στο σύστημα</a></th>
+    <th scope="row">
     <td>Κωδικός:</td>
     <td><input id="pass" type="password"pattern=".{8,20}" style="font-size: 18px;width: 241px" required></td>
+    <td align="center"><form id="form1" name="form1" method="post" action="">
+      <input  style="font-size: 20px;" type="button" name="registerbtn" id="registerbtn" value="Εγγραφή" onClick="location.href='Profile Promithefti/register.html'" />
+    </form></td>
   </tr>
   <tr>
     <th scope="row">&nbsp;</th>
@@ -87,15 +91,15 @@ function changeValue(){
     <td> <a  href="forgotPass.html"> Ξεχάσατε τον κωδικό σας;</a></td>
   </tr>
   <tr>
-    <th scope="row">&nbsp;</th>
+    <th height="49" scope="row">&nbsp;</th>
     <td>&nbsp;</td>
-    <td>	<input onclick="loginCheck();" style="font-size: 25px;" name="Submit1" type="button" value="Σύνδεση"></td>
- 
+    <td align="center">	<input onclick="loginCheck();" style="font-size: 20px;" name="Submit1" type="button" value="Σύνδεση"></td>
+
 </table>
 
     
     
-</div>
- 
+
+ </div>
 </body>
 </html>
