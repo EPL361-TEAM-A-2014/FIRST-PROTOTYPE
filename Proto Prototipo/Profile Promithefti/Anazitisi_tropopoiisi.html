@@ -46,19 +46,44 @@ font-family:"Calibri","sans-serif";
 </div>
 <br>
 <h3>Αναζήτηση</h3> 
-<input type="text" name="input for search" title="ififf"></input>
+<div>
+<table width="571" border="0">
+  <tr>
+    <th width="144"><input type="text" name="textField" id="text" /></th>
+    <th width="417"><p  id="message"></p></th>
+  </tr>
+</table>
+</div>
 <script type="text/javascript">
-    function table_visibility(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
+    function table_visibility(id,text) {
+         var e = document.getElementById(id);
+         
+		 var k=document.getElementById("kind").selectedIndex;
+	if(k==0){
+		document.getElementById("message").innerHTML="Πρέπει να επιλέξετε πεδίο αναζήτησης.";
+		e.style.display = 'none';
+	}else {
+		if(document.getElementById('text').value!=''){
+		e.style.display = 'block';
+		 document.getElementById('text').value='';
+	    }
+	}
     }
+	
+function changeValue(){
+	var k=document.getElementById("kind").selectedIndex;
+	if(k!=0){
+		document.getElementById("message").style.display="none";
+	}
+	else{
+		document.getElementById("message").style.display="block";
+	}
+}
 </script>
 
 <div>
-  <select name="select">
+  <select name="select" id="kind" onchange="changeValue();">
+  <option value="none" selected >Παρακαλώ Επιλέξετε</option>
     <option value="text"> Προϊόν</option>
     <option value="text"> Παρασκευαστική Εταιρία</option>
   </select>
@@ -103,5 +128,10 @@ font-family:"Calibri","sans-serif";
 
 
 </form>
+<style type="text/css">
+#message {
+	color: #F00;
+}
+</style>
 </body>
 </html>
