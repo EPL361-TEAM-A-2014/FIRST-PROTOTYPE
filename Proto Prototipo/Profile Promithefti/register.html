@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Untitled Document</title>
-
+<link href="../css/customcss.css" rel="stylesheet" type="text/css" />
 
 <script>
 function passCheck(){
@@ -43,31 +44,27 @@ window.location="Stoixeia xristi.html";
 <body>
 
 	<div>
-    <img src="../images/banner_gr_Laa.png" width="1060" height="98" /> </div>
+    <img src="../images/banner_gr_Laa.png" width="100%" height="98" /> </div>
     
-    <strong style="font-size:20px;">Στοιχεία Επιχείρησης</strong>
+    <div id="regformcont">
     <form id="regForm">
+ 
 
 
-
-
-
-
-	<table width="41%" height="521" style="width: 100%">
+    <div id="regtable">
+	<table  width="170%" height="641" style="width: 100%">
+    <tr><th colspan="3" align="left"><strong style="font-size:20px;">Στοιχεία Επιχείρησης</strong><th></tr>
 	<tr>
 			<td style="height: 23px;color:red" colspan="3"><a>Τα υποχρεωτικά πεδία έχουν κόκκινο αστεράκι στο τέλος</a></td>
 		</tr>
 
-		<tr>  
-			<td width="197" style="width: 169px; height: 21px" >
-			Επωνυμία Επιχείρησης:</td>
-			<td width="277" style="height: 21px; width: 275px;">
-			<input id ="CompName" onblur="inputCheck('CompName','wrongCompName');" pattern=".{3,50}"style="width: 272px" type="text" required> </td>
-			<td width="1144" style="height: 21px">
-			<a id="wrongCompName" style="color:red;">*</a>
-	
-
-			</td>
+		<tr>
+        	<td width="169"><span style="width: 169px; height: 21px">Επωνυμία Επιχείρησης:</span></td>  
+			<td width="275" style="width: 169px; height: 21px" ><span style="height: 21px; width: 275px;">
+			  <input id ="CompName" onblur="inputCheck('CompName','wrongCompName');" pattern=".{3,50}"style="width: 272px" type="text" required />
+			</span></td>
+			<td width="275" style="height: 21px; width: 275px;"><span style="height: 21px"><a id="wrongCompName" style="color:red;">*</a></span></td>
+			<td width="28" style="height: 21px">&nbsp;</td>
 		</tr>
 		<tr>
 			<td style="height: 23px; width: 169px;">
@@ -136,10 +133,11 @@ window.location="Stoixeia xristi.html";
 		</tr>
     	
     	<tr>
-    	  <td colspan="3" style="height: 23px;color:red">Το όνομα χρήστη πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες και να περιλαμβάνει αριθμούς,</td>
+    	  <td colspan="3" style="height: 23px;color:red"><p>Το όνομα χρήστη πρέπει να αποτελείται από 8 μέχρι 20 χαρακτήρες </p>
+   	      <p>και να περιλαμβάνει αριθμούς,καθώς και κεφαλαία και μικρά γράμματα.</p></td>
   	  </tr>
     	<tr>
-    	  <td colspan="3" style="height: 23px;color:red">καθώς και κεφαλαία και μικρά γράμματα. Πρέπει να ξεκινά πάντοτε από γράμμα.</td>
+    	  <td colspan="3" style="height: 23px;color:red"><p>Πρέπει να ξεκινά πάντοτε από γράμμα.</p></td>
   	  </tr>
 		<tr>
 			<td style="width: 169px; height: 23px;">Όνομα Χρήστη:</td>
@@ -149,10 +147,11 @@ window.location="Stoixeia xristi.html";
 		</tr>
 		
 		<tr>
-		  <td style="height: 23px;color:red" colspan="3">Ο κωδικός πρέπει να αποτελείται από 8 ή περισσότερους χαρακτήρες και να περιλαμβάνει αριθμούς, </td>
+		  <td style="height: 23px;color:red" colspan="3"><p>Ο κωδικός πρέπει να αποτελείται από 8 ή περισσότερους χαρακτήρες </p>
+	      <p>και να περιλαμβάνει αριθμούς,καθώς και κεφαλαία και μικρά γράμματα.</p></td>
 	  </tr>
 		<tr>
-		  <td style="height: 23px;color:red" colspan="3">καθώς και κεφαλαία και μικρά γράμματα.</td>
+		  <td style="height: 23px;color:red" colspan="3">&nbsp;</td>
 	  </tr>
 		<tr>
 			<td style="width: 169px">Κωδικός:</td>
@@ -169,15 +168,14 @@ window.location="Stoixeia xristi.html";
 		
 		
 		</table>
-		<strong style="font-size:20px;">Στοιχεία Υπεύθυνου Επικοινωνίας</strong>
-			<table style="width: 100%">
-
+			<table width="117%" style="width: 100%">
+		<tr><th colspan="3" align="left"><strong style="font-size:20px;">Στοιχεία Υπεύθυνου Επικοινωνίας</strong></th></tr>
 		<tr>
-			<td width="167" style="width: 160px" >
+			<td width="160" style="width: 160px" >
 			Όνομα:</td>
-			<td width="327" style="width: 269px" >
+			<td width="271" style="width: 269px" >
 			<input onblur="inputCheck('comName','wrongcomName');" id ="comName"pattern=".{5,50}" style="width: 271px" type="text"required></td>
-			<td width="1124" >
+			<td width="18" >
 			<a id="wrongcomName" style="color:red;">*</a></td>
 		</tr>
 		<tr>
@@ -257,14 +255,14 @@ window.location="Stoixeia xristi.html";
 			<td>&nbsp;</td>
 		</tr>
 	</table>
-
+</div>
 
 
 
 
 
 </form>
-
+</div>
 
 
 </body>
