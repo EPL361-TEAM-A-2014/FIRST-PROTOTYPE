@@ -2,29 +2,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-
+<title>Forget Password</title>
+<link rel="stylesheet" type="text/css" href="css/customcss.css">
 <script>
 function resetPass(){
-if(document.getElementById("userName").checkValidity()){
+/*if(document.getElementById("userName").checkValidity()){
 document.getElementById("wrongUserName").innerHTML="";
 document.getElementById("resetButton").style.visibility = 'hidden';
 document.getElementById("message").innerHTML="Έχει αποσταλεί μήνυμα με τoν νέο κωδικό σας στο λογαριασμό ηλεκτρονικού ταχυδρομείου που δηλώσατε κατά την εγγραφή.";
 document.getElementById("backToLogin").innerHTML="Πατήστε εδώ για να επιστρέψετε στην οθόνη εισόδου";
 document.getElementById("backToLogin").href="login.html";
-}else{document.getElementById("wrongUserName").innerHTML="Έχετε βάλει μη έγκυρο όνομα χρήστη";}
+}else{document.getElementById("wrongUserName").innerHTML="Έχετε βάλει μη έγκυρο όνομα χρήστη";}*/
+
+window.location="login.html";
 }
+
 </script>
 </head>
 
 <body>
+<div class="setscreen">
 
-
-    <div>
-    <img src="banner_gr_Laa.png" width="1060" height="98" /> </div>
-    
-    <div>
-   	  <table >
+   	  <table class="login">
+      <tr><th colspan="2"><img src="images/banner_gr_Laa.png" width="100%" height="98" /> </div></th></tr>
   <tr>
     <th height="41" colspan="2" scope="col">Επαναφορά του κωδικού πρόσβασης</th>
     </tr>
@@ -36,6 +36,7 @@ document.getElementById("backToLogin").href="login.html";
     <th scope="row">&nbsp;</th>
     <td></a><input style="font-size: 20px;" id="resetButton"name="Submit1" type="button" value="Aποστολή αιτήματος" onclick="resetPass()" style="width: 178px"><a id="message"></a></td>
   </tr>
+  <tr height="20px"></tr>
 </table>
 
 </div>
