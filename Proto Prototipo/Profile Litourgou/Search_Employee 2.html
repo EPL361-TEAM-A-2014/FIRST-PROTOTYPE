@@ -26,16 +26,20 @@ font-family:"Calibri","sans-serif";
 -->
 </style>
 </head>
+<body>
 
-<p><img src="../images/banner_gr_Laa.png" width="1060" height="98" /></p>
+<table width="100%" >
+<tr><td>
+<p><img src="../images/banner_gr_Laa.png" width="100%" height="98" /></p>
+</td></tr>
 
-<div>
-<table>
-<tr><td><font size="3">User name</font></td>
-<td  width = "650px"></td>
-<td> <a href="../login.html">Log out</a></td>
+
+<table width="100%">
+<tr><td width="183"><font size="3">User name</font></td>
+<td  width = "700"></td>
+<td width="85"> <a href="../login.html">Log out</a></td>
 </tr></table>
-</div>
+
 <br>
 
 
@@ -43,15 +47,15 @@ font-family:"Calibri","sans-serif";
 
 
 
-<h3>Αναζήτηση</h3> 
-<div>
-<table width="571" border="0">
+<h3 align="center">Αναζήτηση</h3> 
+
+<table width="100%" border="0">
   <tr>
-    <th width="144"><input type="text" name="textField" id="text" /></th>
-    <th width="417" bordercolor="#FF0000"><p  id="message"></p></th>
+    <th width="50%" align="right"><input type="text" name="textField" id="text" /></th>
+    <th width="50%" align="left" bordercolor="#FF0000"><p  id="message"></p></th>
   </tr>
 </table>
-</div>
+
 <script type="text/javascript">
     function table_visibility(id,text) {
          var e = document.getElementById(id);
@@ -79,18 +83,24 @@ function changeValue(){
 }
 </script>
 
-<div>
-  <select name="select" id="kind"  onchange="changeValue();">
+<table width="100%">
+<tr>
+  <td width="50%" align="right"><select name="select" id="kind"  onchange="changeValue();">
     <option value="none" selected >Παρακαλώ Επιλέξετε</option>
     <option value="text"> Προϊόν</option>
     <option value="text"> Προμηθευτής </option>
     <option value="text"> Χειμική Ουσία </option>
     <option value="text"> Παρασκευαστική Εταιρία</option>
-  </select>
+  </select></td>
+  <td width="50%" align="left">
   <button  name="b1" onclick="table_visibility('table','text');" id="button" type="search">Αναζήτηση</button> 
-</div>
+</td>
+</tr>
+</table>
 <br>
-<div id='table'  style="display:none" >
+<table  id='table' align="center" style="display:none" width="100%">
+<tr><td width="350"></td>
+<td>
   <table class="MsoTableLightGridAccent5" border="1" cellspacing="0" cellpadding="0" width="650" style="border-collapse:collapse;border:none;">
     <tr style="height:15.95pt;">
       <td width="21" valign="top" style="width:15.75pt;border:solid #4BACC6 1.0pt;border-bottom:solid #4BACC6 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" align="center" style="margin-bottom:.0001pt;text-align:center;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">#</span></strong></p></td>
@@ -107,7 +117,7 @@ function changeValue(){
     <tr style="height:13.8pt;">
       <td width="21" valign="top" style="width:15.75pt;border:solid #4BACC6 1.0pt;border-top:none;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
       <td width="87" valign="top" style="width:65.3pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν A</a></p></td>
+      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν A</a></p></td>
       <td width="171" valign="top" style="width:128.4pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="123" valign="top" style="width:92.15pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="113" colspan="2" valign="top" style="width:3.0cm;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
@@ -116,7 +126,7 @@ function changeValue(){
     <tr style="height:13.8pt;">
       <td width="21" valign="top" style="width:15.75pt;border:solid #4BACC6 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
       <td width="87" valign="top" style="width:65.3pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν B</a></p></td>
+      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν B</a></p></td>
       <td width="171" valign="top" style="width:128.4pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="123" valign="top" style="width:92.15pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="113" colspan="2" valign="top" style="width:3.0cm;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
@@ -125,14 +135,15 @@ function changeValue(){
     <tr style="height:13.8pt;">
       <td width="21" valign="top" style="width:15.75pt;border:solid #4BACC6 1.0pt;border-top:none;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
       <td width="87" valign="top" style="width:65.3pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν Γ</a></p></td>
+      <td width="94" valign="top" style="width:70.35pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν Γ</a></p></td>
       <td width="171" valign="top" style="width:128.4pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="123" valign="top" style="width:92.15pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="113" colspan="2" valign="top" style="width:3.0cm;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
       <td width="41" valign="top" style="width:30.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a href=""><img src="../images/Adobe_PDF_icon.png" width="31" height="31" /></p></td>
     </tr>
   </table>
-</div>
+  </td></tr>
+</table>
 
 </form>
 

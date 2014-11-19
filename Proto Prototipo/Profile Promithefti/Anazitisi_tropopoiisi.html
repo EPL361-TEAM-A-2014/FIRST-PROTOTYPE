@@ -21,36 +21,48 @@ line-height:115%;
 font-size:11.0pt;
 font-family:"Calibri","sans-serif";
 }
+a {
+	text-align: right;
+}
+#table {
+	text-align: left;
+}
 -->
 </style>
 </head>
 
 <body>
-<p><img src="../images/banner_gr_Laa.png" width="1060" height="98" /></p>
-<p>
+<p><img src="../images/banner_gr_Laa.png" width="100%" height="98" /></p>
+
 <br>
+<div align="center">
 <table>
-<tr><td><font size="3">User name</font></td><td></td><td></td><td></td><td  width = "700px"></td><td><font size="3" color="#0000FF"><u><a href="../login.html">Log out</a></u></font></td></tr>
+<tr><td width="65"><font size="3">User name</font></td><td width="0"></td><td width="0"></td><td width="0"></td><td  width = "810"></td>
+<td width="63" align="left"><font size="3" color="#0000FF" ><a href="../login.html"> Log out</a></font></td></tr>
 </table>
+
+
 <br>
-<div id="navbar">
-<div id="holder">
+
+<div id="navbar" align="center">
+<div id="holder" align="center">
 <ul>
-<li><a href="Stoixeia xristi.html"id="User">Στοιχεία Χρήστη</a></li>
-<li><a href="Prosthiki poiontos.html">Προσθήκη Προιόντος</a></li>
-<li><a href="Anazitisi_tropopoiisi.html"id="Search">Αναζήτηση-Τροποποίηση Προιόντος</a></li>
+<li ><a href="..//Profile Promithefti/Stoixeia xristi.html"id="User">Στοιχεία Χρήστη</a></li>
+<li><a href="../Profile Promithefti/Prosthiki poiontos.html">Προσθήκη Προιόντος</a></li>
+<li><a href="../Profile Promithefti/Anazitisi_tropopoiisi.html"id="Search">Αναζήτηση-Τροποποίηση Προιόντος</a></li>
 <li></li>
 <li></li>
 </ul>
 </div>
 </div>
+
 <br>
 <h3>Αναζήτηση</h3> 
-<div>
-<table width="571" border="0">
+<div >
+<table width="100%" border="0">
   <tr>
-    <th width="144"><input type="text" name="textField" id="text" /></th>
-    <th width="417"><p  id="message"></p></th>
+    <th width="50%" align="right" ><input type="text" name="textField" id="text" /></th>
+    <th width="461" align="left"><p  id="message"></p></th>
   </tr>
 </table>
 </div>
@@ -81,50 +93,57 @@ function changeValue(){
 }
 </script>
 
-<div>
+<table width="100%">
+<tr><td width="50%"  align="right">
   <select name="select" id="kind" onchange="changeValue();">
   <option value="none" selected >Παρακαλώ Επιλέξετε</option>
     <option value="text"> Προϊόν</option>
     <option value="text"> Παρασκευαστική Εταιρία</option>
   </select>
+  </td>
+  <td width="182">
   <button type="button" name="b1" onclick="table_visibility('table');" id="button">Αναζήτηση</button> 
-</div>
+  </td>
+</table>
 <br>
-<div id='table' style="display:none" >
-<table class="MsoTableLightGridAccent5" border="1" cellspacing="0" cellpadding="0" width="767" style="border-collapse:collapse;border:none;">
+<table id='table' align="center"  style="display:none"  width="100%">
+<tr><td width="300"></td>
+<td>
+  <table class="MsoTableLightGridAccent5" border="1" cellspacing="0" cellpadding="0" width="825" style="border-collapse:collapse;border:none;">
   <tr style="height:15.95pt;">
     <td width="39" valign="top" style="width:17.6pt;border:solid #4BACC6 1.0pt;border-bottom:solid #4BACC6 2.25pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">#</span></strong></p></td>
     <td width="176" valign="top" style="width:113.45pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">Αριθμός    Αναφοράς</span></strong><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> </span></strong></p></td>
     <td width="186" valign="top" style="width:120.45pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">Ονομασία    Προϊόντος </span></strong><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> </span></strong></p></td>
-    <td width="236" valign="top" style="width:148.85pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">Παρασκευαστική    Αιτερία</span></strong><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> </span></strong></p></td>
-    <td width="118" valign="top" style="width:77.95pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> Ημερομηνία</span></strong></p></td>
+    <td width="226" valign="top" style="width:148.85pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; ">Παρασκευαστική    Αιτερία</span></strong><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> </span></strong></p></td>
+    <td width="186" valign="top" style="width:77.95pt;border-top:solid #4BACC6 1.0pt;border-left:none;border-bottom:solid #4BACC6 2.25pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Times New Roman','serif'; font-size:12.0pt; "> Ημερομηνία</span></strong></p></td>
   </tr>
   <tr style="height:13.8pt;">
     <td width="39" valign="top" style="width:17.6pt;border:solid #4BACC6 1.0pt;border-top:none;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
     <td width="176" valign="top" style="width:113.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν Α</a></td>
-    <td width="236" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="118" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν Α</a></td>
+    <td width="226" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
   </tr>
   <tr style="height:13.8pt;">
     <td width="39" valign="top" style="width:17.6pt;border:solid #4BACC6 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
     <td width="176" valign="top" style="width:113.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν Β</a></p></td>
-    <td width="236" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="118" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν Β</a></p></td>
+    <td width="226" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
   </tr>
   <tr style="height:13.8pt;">
     <td width="39" valign="top" style="width:17.6pt;border:solid #4BACC6 1.0pt;border-top:none;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><strong><span style="font-family:'Cambria','serif'; ">&nbsp;</span></strong></p></td>
     <td width="176" valign="top" style="width:113.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../../stoixeia proiontos/ProductDetails.html">Προϊόν Γ</a></p></td>
-    <td width="236" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
-    <td width="118" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:120.45pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;"><a  href="../stoixeia proiontos/ProductDetails.html">Προϊόν Γ</a></p></td>
+    <td width="226" valign="top" style="width:148.85pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
+    <td width="186" valign="top" style="width:77.95pt;border-top:none;border-left:none;border-bottom:solid #4BACC6 1.0pt;border-right:solid #4BACC6 1.0pt;background:#D2EAF1;padding:0cm 5.4pt 0cm 5.4pt;height:13.8pt;" bgcolor="#D2EAF1"><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;">&nbsp;</p></td>
   </tr>
 </table>
-
-</div>
+</td></tr>
+</table>
 <br>
 
+</div>
 
 
 </form>
